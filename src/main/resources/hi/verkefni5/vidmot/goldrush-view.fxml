@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import hi.verkefni5.vidmot.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni5.vidmot.GoldController">
+
+    <fx:include fx:id="menu" source="menu-view.fxml" />
+    <Leikbord fx:id="fxLeikbord" prefHeight="650.0" prefWidth="590.0" style="-fx-background-color: BLACK;">
+      <VBox.margin>
+         <Insets left="5.0" right="5.0" />
+      </VBox.margin></Leikbord>
+   <HBox prefHeight="121.0" prefWidth="600.0">
+      <children>
+         <Label alignment="CENTER" minHeight="50.0" minWidth="50.0" text="Stig: ">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets left="200.0" />
+            </padding>
+         </Label>
+         <Label fx:id="fxStig" minHeight="50.0" minWidth="50.0" text="0">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Label fx:id="fxTimiTexti" alignment="CENTER" minHeight="50.0" minWidth="50.0" text="Tími:">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="fxTimi" minHeight="50.0" prefHeight="50.0" prefWidth="211.0" text="0">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Label>
+      </children>
+   </HBox>
+
+</VBox>

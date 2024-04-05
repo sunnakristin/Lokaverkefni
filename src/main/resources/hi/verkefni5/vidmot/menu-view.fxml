@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni5.vidmot.MenuController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+
+      <menus>
+        <Menu mnemonicParsing="false" text="Skrá">
+               <items>
+                  <MenuItem fx:id="fxNyrLeikur" mnemonicParsing="false" onAction="#onNyrLeikur" text="Nýr leikur" />
+                  <MenuItem mnemonicParsing="false" onAction="#onHaetta" text="Hætta" />
+               </items></Menu>
+        <Menu mnemonicParsing="false" text="Breyta">
+               <items>
+                  <RadioMenuItem fx:id="1" mnemonicParsing="false" onAction="#onErfidleikastig" selected="true" text="Auðvelt">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="fxToggleG" />
+                     </toggleGroup></RadioMenuItem>
+                  <RadioMenuItem fx:id="2" mnemonicParsing="false" onAction="#onErfidleikastig" text="Miðlungs" toggleGroup="$fxToggleG" />
+                  <RadioMenuItem fx:id="3" mnemonicParsing="false" onAction="#onErfidleikastig" text="Erfitt" toggleGroup="$fxToggleG" />
+               </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Hjálp">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#onUmForritid" text="Um forritið" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" />
+  </children>
+</VBox>
